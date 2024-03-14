@@ -8,70 +8,69 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/VictoriaLuconin.styles.css" asp-append-version="true" />
     <style>
-        img{
-            width:100px;
+        img {
+            width: 50px;
         }
 
-        .a{
-            width:160px;
-    
+        .a {
+            width: 800px;
+            text-align:center;
         }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div >
-                <img src="https://st5.depositphotos.com/34366668/65800/v/450/depositphotos_658008474-stock-illustration-sport-car-logo-icon-design.jpg" />
-                <a class="navbar-brand" asp-area="" asp-page="/Index">AutoHub</a>
+        <div>
+
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow justify-content-center">
+            <div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                   
+
+                    <div class="navbar-collapse collapse ">
+                        <img style="text-align:left" src="https://st5.depositphotos.com/34366668/65800/v/450/depositphotos_658008474-stock-illustration-sport-car-logo-icon-design.jpg" />
+                        <a class="navbar-brand" asp-area="" asp-page="/Index">AutoHub</a>
+                        <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Главная страница</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Авторизация</a>
                         </li>
-                     
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Авто в наличии</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Exists">Авто в наличии</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/USA">Авто из США</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Korea">Авто из Кореи</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Авто из США</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/China">Авто из Китая</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Авто из Кореи</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Contacts">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Авто из Китая</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Catalog">Каталог</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">+37378623972</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Каталог</a>
-                        
-                       
                     </ul>
                 </div>
+
             </div>
         </nav>
+        </div>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - VictoriaLuconin - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
